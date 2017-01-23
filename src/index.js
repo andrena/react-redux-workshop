@@ -1,6 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import App from './components/App'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import {Provider} from 'react-redux'
+import {createStore} from 'redux'
+
+import App from './components/App'
+import reducer from './redux/reducer'
+
+const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'))
