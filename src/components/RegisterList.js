@@ -1,12 +1,16 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {ListGroup, ListGroupItem} from 'reactstrap'
 
-export default () => (
+export const RegisterList = ({list = []}) => (
     <ListGroup>
-        <ListGroupItem>Cras justo odio</ListGroupItem>
-        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-        <ListGroupItem>Morbi leo risus</ListGroupItem>
-        <ListGroupItem>Porta ac consectetur ac</ListGroupItem>
-        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        {list.map((listItem) => <ListGroupItem>{listItem}</ListGroupItem>)}
     </ListGroup>
 )
+
+const mapStateToProps = (state) => (
+    {list: state.list}
+)
+const mapActionsToProps = {}
+
+export default connect(mapStateToProps, mapActionsToProps)(RegisterList)

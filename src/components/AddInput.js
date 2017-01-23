@@ -38,13 +38,11 @@ export class AddInput extends Component {
     }
 }
 
-
 const mapStateToProps = (state) => (
     {}
 )
 const mapActionsToProps = {
     addIndexItem: actions.addIndexItem
 }
-
 
 export default connect(mapStateToProps, mapActionsToProps)(AddInput)

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RegisterList from './RegisterList';
+import {RegisterList} from './RegisterList';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');

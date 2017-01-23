@@ -21,7 +21,7 @@ describe('reducer', () => {
     })
 
     it('should update the list correctly for 2 items', () => {
-        const testItem0 = 'TestItem0';
+        const testItem0 = 'TestItem0'
         const testItem1 = 'TestItem1'
 
         const action0 = {type: actionTypes.ADD_INDEX_ITEM, name: testItem0}
