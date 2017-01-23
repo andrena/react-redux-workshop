@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 
+import './index.css'
 import App from './components/App'
 import reducer from './redux/reducer'
 
