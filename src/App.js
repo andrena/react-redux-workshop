@@ -1,6 +1,8 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import {Container, Row, Col, Jumbotron, InputGroup, InputGroupButton, Input, ListGroup, ListGroupItem} from 'reactstrap'
+import SearchInput from './SearchInput'
+import AddInput from './AddInput'
 
 // checkout http://reactstrap.github.io/components/ to see how reactstrap components work
 
@@ -14,16 +16,10 @@ export default () => (
 
             <Row>
                 <Col xs="12" sm="6">
-                    <InputGroup>
-                        <InputGroupButton>Suchen</InputGroupButton>
-                        <Input placeholder="Bitte geben Sie einen Suchbegriff ein" />
-                    </InputGroup>
+                    <SearchInput />
                 </Col>
                 <Col xs="12" sm="6">
-                    <InputGroup>
-                        <Input placeholder="Bitte geben Sie einen Begriff ein" />
-                        <InputGroupButton>Hinzufügen</InputGroupButton>
-                    </InputGroup>
+                    <AddInput />
                 </Col>
             </Row>
 
