@@ -1,8 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {mount} from 'enzyme'
 import {SearchInput} from './SearchInput';
 
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<SearchInput />, div);
-});
+describe('<SearchInput />', () => {
+    it('renders without crashing', () => {
+        mount(<SearchInput />)
+    })
+
+    it('should execute search on click', () => {
+        const mockFunction = jest.fn()
+        const wrapper = mount(<SearchInput search={mockFunction}/>)
+
+        wrapper.find('InputGroupButton').find('button').simulate('click')
+
+        expect(mockFunction.mock.calls.length).toBe(1)
+    })
+
+})
+
+
