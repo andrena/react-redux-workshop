@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {ListGroup, ListGroupItem} from 'reactstrap'
+import {selectors} from '../redux/reducer'
 
 export const RegisterList = ({list = []}) => (
     <ListGroup>
@@ -13,7 +14,7 @@ RegisterList.propTypes = {
 }
 
 const mapStateToProps = (state) => (
-    {list: state.list}
+    {list: selectors.getFilteredList(state)}
 )
 const mapActionsToProps = {}
 
