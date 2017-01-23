@@ -1,5 +1,29 @@
-import reducer from './reducer'
+import reducer, {selectors} from './reducer'
 import {actionTypes} from './actions'
+
+describe('selectors', () => {
+    it('should get the correctly filtered list items', () => {
+        const fooBar = 'fooBar'
+        const fooBaz = 'fooBaz'
+        const state = {
+            list: [
+                fooBar,
+                fooBaz,
+                'test1',
+                'test2',
+                'test3',
+                'test4',
+            ],
+            searchText: 'foo'
+        }
+
+        const filteredList = selectors.getFilteredList(state)
+
+        expect(Array.isArray(filteredList)).toBe(true)
+        expect(filteredList.length).toBe(2)
+        expect(filteredList).toEqual([fooBar, fooBaz])
+    })
+})
 
 describe('reducer', () => {
     it('should return the correct default state', () => {
