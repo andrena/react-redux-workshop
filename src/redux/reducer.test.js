@@ -36,11 +36,13 @@ describe('reducer', () => {
     })
 
     it('should return the correct state for action type ' + actionTypes.SEARCH_INDEX_ITEM, () => {
+        const testSearchText = 'testSearchText'
+
         const state = {}
-        const action = {type: actionTypes.SEARCH_INDEX_ITEM}
+        const action = {type: actionTypes.SEARCH_INDEX_ITEM, name: testSearchText}
 
         const reducedState = reducer(state, action)
 
-        expect(reducedState).toBe(state)
+        expect(reducedState.searchText).toBe(testSearchText)
     })
 })
