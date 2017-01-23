@@ -11,7 +11,7 @@ export const SearchInput = ({currentSearch, search}) => (
 )
 
 const mapStateToProps = (state) => (
-    {currentSearch: state.search}
+    {currentSearch: state.searchText}
 )
 const mapActionsToProps = {
     search: actions.searchIndexItem

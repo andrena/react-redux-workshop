@@ -1,11 +1,11 @@
 import {actionTypes} from './actions'
 
-export default (state = {list: []}, action) => {
+export default (state = {list: [], searchText: ''}, action) => {
     switch (action.type) {
         case actionTypes.ADD_INDEX_ITEM:
             return Object.assign({}, state, {list: [...state.list, action.name]})
         case actionTypes.SEARCH_INDEX_ITEM:
-            return state
+            return Object.assign({}, state, {searchText: action.name})
         default:
             return state
     }
