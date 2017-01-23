@@ -11,9 +11,17 @@ export default () => (
             <p className="lead">
                 Diese kleine Anwendung stellt ein Register zur verfügung, welches man selbst befüllen kann.
             </p>
+
+            <Row>
+                <Col xs="12" sm="6">
+                    Search Box
+                </Col>
+                <Col xs="12" sm="6">
+                    Add new Index Item
+                </Col>
+            </Row>
+
         </Jumbotron>
-        <Row>Search Box</Row>
-        <Row>Add new Index Item</Row>
         <Row>Index List</Row>
     </Container>
 )
