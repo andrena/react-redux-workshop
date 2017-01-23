@@ -1,15 +1,13 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {InputGroup, InputGroupButton, Input} from 'reactstrap'
+import {Input} from 'reactstrap'
 import {actions} from '../redux/actions'
 
 export const SearchInput = ({currentSearch, search}) => (
-    <InputGroup>
-        <InputGroupButton onClick={({target}) => search(target.value)}>
-            Suchen
-        </InputGroupButton>
-        <Input placeholder="Bitte geben Sie einen Suchbegriff ein"/>
-    </InputGroup>
+    <Input
+        onChange={({target}) => search(target.value)}
+        placeholder="Bitte geben Sie einen Suchbegriff ein"
+    />
 )
 
 const mapStateToProps = (state) => (

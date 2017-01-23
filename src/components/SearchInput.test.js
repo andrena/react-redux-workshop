@@ -11,7 +11,7 @@ describe('<SearchInput />', () => {
         const mockFunction = jest.fn()
         const wrapper = mount(<SearchInput search={mockFunction}/>)
 
-        wrapper.find('InputGroupButton').find('button').simulate('click')
+        wrapper.find('Input').simulate('change', 'Foobar')
 
         expect(mockFunction.mock.calls.length).toBe(1)
     })
