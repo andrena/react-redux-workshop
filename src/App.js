@@ -16,12 +16,12 @@ export default () => (
                 <Col xs="12" sm="6">
                     <InputGroup>
                         <InputGroupButton>Suchen</InputGroupButton>
-                        <Input />
+                        <Input placeholder="Bitte geben Sie einen Suchbegriff ein" />
                     </InputGroup>
                 </Col>
                 <Col xs="12" sm="6">
                     <InputGroup>
-                        <Input />
+                        <Input placeholder="Bitte geben Sie einen Begriff ein" />
                         <InputGroupButton>Hinzufügen</InputGroupButton>
                     </InputGroup>
                 </Col>
