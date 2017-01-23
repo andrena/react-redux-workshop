@@ -1,8 +1,39 @@
 
 # Navigatorentreffen Workshop
 
-Dies ist ein Lernprojekt 
-um React.js und Redux zu erlernen und zu verstehen.
+Dies ist ein Lernprojekt um 
+React.js (https://facebook.github.io/react/docs/hello-world.html) 
+und Redux (http://redux.js.org/)
+zu erlernen und zu verstehen. 
+<br />Es wurde mit 
+`create-react-app` (https://github.com/facebookincubator/create-react-app) erstellt.
+
+## Project starten
+Das Projekt lässt sich mit dem Befehl
+<br />`yarn run start` starten.
+
+Danach kann man im Browser über die URL 
+<br />`http://localhost:3000/` das Projekt begutachten.
+
+## Tests
+Im gesamten Projekt gibt es für jede Datei einen Test, welcher im selben Ordner
+liegt umd mit `.test.js` endet.
+
+Die React.js-Tests verwenden neben
+<br />`jest` (https://facebook.github.io/jest/docs/getting-started.html),
+<br />`redux-mock-store` (http://arnaudbenard.com/redux-mock-store/) auch 
+<br />`enzyme` (http://airbnb.io/enzyme/docs/api/mount.html) 
+
+### Testrunner
+
+Um die Tests auszuführen und bei Veränderungen der Dateien die Tests neu
+ausführen zu lassen, kann man den Befehl
+<br />`yarn run test` ausführen.
+
+### Testcoverage
+
+Möchte man eine Testcoverage haben, kann man den Befehl
+<br />`yarn run test -- --coverage` ausführen.
 
 ## Stages
 Das Projekt ist in mehere Stages unterteilt, welche alle einen git Tag haben:
@@ -31,25 +62,8 @@ Die Stages sind chronologisch geordnet, wobei
 `stage-1-start` den Beginn und 
 `stage-2-with-SearchInput-selector` das Ende darstellt.
 
-### Tests
-Im gesamten Projekt gibt es für jede Datei einen Test, welcher im selben Ordner
-liegt umd mit `.test.js` endet.
-
-Die React.js-Tests verwenden neben
-<br />`jest` (https://facebook.github.io/jest/docs/getting-started.html),
-<br />`redux-mock-store` (http://arnaudbenard.com/redux-mock-store/) auch 
-<br />`enzyme` (http://airbnb.io/enzyme/docs/api/mount.html) 
-
-#### Testrunner
-
-Um die Tests auszuführen und bei Veränderungen der Dateien die Tests neu
-ausführen zu lassen, kann man den Befehl
-<br />`yarn run test` ausführen.
-
-#### Testcoverage
-
-Möchte man eine Testcoverage haben, kann man den Befehl
-<br />`yarn run test -- --coverage` ausführen.
+Um mit der ersten Stage zu starten reicht folgender Befehl:
+<br />`git clone https://github.com/beac0n/navigatorentreffen-workshop && cd ./navigatorentreffen-workshop && git checkout stage-1-start && git checkout master README.md && yarn && yarn run start`
 
 ### Stage 1
 In dieser Stage geht es darum, die Grundlagen von React.js zu verstehen.
