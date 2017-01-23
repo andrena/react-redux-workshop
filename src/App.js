@@ -1,8 +1,9 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import {Container, Row, Col, Jumbotron, InputGroup, InputGroupButton, Input, ListGroup, ListGroupItem} from 'reactstrap'
+import {Container, Row, Col, Jumbotron} from 'reactstrap'
 import SearchInput from './SearchInput'
 import AddInput from './AddInput'
+import RegisterList from './RegisterList'
 
 // checkout http://reactstrap.github.io/components/ to see how reactstrap components work
 
@@ -15,23 +16,14 @@ export default () => (
             </p>
 
             <Row>
-                <Col xs="12" sm="6">
-                    <SearchInput />
-                </Col>
-                <Col xs="12" sm="6">
-                    <AddInput />
-                </Col>
+                <Col xs="12" sm="6"> <SearchInput /> </Col>
+                <Col xs="12" sm="6"> <AddInput /> </Col>
             </Row>
 
         </Jumbotron>
+
         <Container>
-            <ListGroup>
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Morbi leo risus</ListGroupItem>
-                <ListGroupItem>Porta ac consectetur ac</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
-            </ListGroup>
+            <RegisterList />
         </Container>
     </Container>
 )
