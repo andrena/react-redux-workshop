@@ -21,7 +21,7 @@ export class AddInput extends Component {
         const {currentName} = this.state
 
         addIndexItem(currentName)
-        this.setState({currentName: ''})
+        this.updateName('')
     }
 
     render() {
