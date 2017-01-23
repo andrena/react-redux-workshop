@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchInput from './SearchInput';
+import {SearchInput} from './SearchInput';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
