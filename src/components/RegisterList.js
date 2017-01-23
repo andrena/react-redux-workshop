@@ -8,6 +8,10 @@ export const RegisterList = ({list = []}) => (
     </ListGroup>
 )
 
+RegisterList.propTypes = {
+    list: React.PropTypes.array,
+}
+
 const mapStateToProps = (state) => (
     {list: state.list}
 )
