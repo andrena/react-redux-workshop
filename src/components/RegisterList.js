@@ -5,7 +5,7 @@ import {selectors} from '../redux/reducer'
 
 export const RegisterList = ({list = []}) => (
     <ListGroup>
-        {list.map((listItem) => <ListGroupItem>{listItem}</ListGroupItem>)}
+        {list.map((listItem, index) => <ListGroupItem key={index}>{listItem}</ListGroupItem>)}
     </ListGroup>
 )
 
