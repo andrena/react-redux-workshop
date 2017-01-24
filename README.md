@@ -100,7 +100,7 @@ Die Aufgaben ergeben sich nach und nach über die Substages:
 2. `stage-2-with-AddInput` `stage-2-with-AddInput-reducer`: 
 Das Feld, welches für das Hinzufügen eines
 neuen Eintrags verantwortlich ist, soll über Redux implementiert werden
-3. : `stage-2-with-RegisterList`: Die Liste, welche alle Einträge anzeigt, soll
+3. `stage-2-with-RegisterList`: Die Liste, welche alle Einträge anzeigt, soll
 über Redux ihre Einträge erhalten und anzeigen
 4. `stage-2-with-SearchInput` `stage-2-with-SearchInput-selector`: 
 Die Eingaben, die im Suchen-Feld getätigt werden, soll über Redux 
