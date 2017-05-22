@@ -1,8 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import {Container, Row, Col} from 'reactstrap'
-
-// checkout http://reactstrap.github.io/components/ to see how reactstrap components work
+import {Container, Row} from 'reactstrap'
 
 export default () => (
     <Container>
