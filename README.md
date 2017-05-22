@@ -23,8 +23,7 @@ Die React.js-Tests verwenden
 
 ### Testrunner
 Um die Tests auszuführen und bei Veränderungen der Dateien die Tests neu
-ausführen zu lassen, kann man den Befehl
-<br />`yarn run test` ausführen.
+ausführen zu lassen, kann man den Befehl `yarn run test` ausführen.
 
 ### Testcoverage
 Um eine Testcoverage zu erstellen, kann der Befehl
