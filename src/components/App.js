@@ -5,8 +5,6 @@ import SearchInput from './SearchInput'
 import AddInput from './AddInput'
 import RegisterList from './RegisterList'
 
-// checkout http://reactstrap.github.io/components/ to see how reactstrap components work
-
 export default () => (
     <Container>
         <Jumbotron>
