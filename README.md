@@ -1,28 +1,26 @@
-
-# Navigatorentreffen Workshop
+# React-Redux-Workshop
 
 Dies ist ein Lernprojekt um 
 React.js (https://facebook.github.io/react/docs/hello-world.html) 
 und Redux (http://redux.js.org/)
 zu erlernen und zu verstehen. 
-<br />Es wurde mit 
+
+Es wurde mit
 `create-react-app` (https://github.com/facebookincubator/create-react-app) erstellt.
 
 ## Project starten
-Das Projekt lässt sich mit dem Befehl
-<br />`yarn run start` starten.
+Das Projekt lässt sich mit dem Befehl `yarn run start` starten.
 
-Danach kann man im Browser über die URL 
-<br />`http://localhost:3000/` das Projekt begutachten.
+Danach kann man im Browser über die URL `http://localhost:3000/` das Projekt begutachten.
 
 ## Tests
 Im gesamten Projekt gibt es für jede Datei einen Test, welcher im selben Ordner
 liegt umd mit `.test.js` endet.
 
-Die React.js-Tests verwenden neben
-<br />`jest` (https://facebook.github.io/jest/docs/getting-started.html),
-<br />`redux-mock-store` (http://arnaudbenard.com/redux-mock-store/) auch 
-<br />`enzyme` (http://airbnb.io/enzyme/docs/api/mount.html) 
+Die React.js-Tests verwenden
+* `jest` (https://facebook.github.io/jest/docs/getting-started.html),
+* `redux-mock-store` (http://arnaudbenard.com/redux-mock-store/)
+* `enzyme` (http://airbnb.io/enzyme/docs/api/mount.html)
 
 ### Testrunner
 
@@ -32,11 +30,12 @@ ausführen zu lassen, kann man den Befehl
 
 ### Testcoverage
 
-Möchte man eine Testcoverage haben, kann man den Befehl
-<br />`yarn run test -- --coverage` ausführen.
+Um eine Testcoverage zu erstellen, kann der Befehl
+<br />`yarn run test -- --coverage` ausgeführt werden.
 
 ## Stages
-Das Projekt ist in mehere Stages unterteilt, welche alle einen git Tag haben:
+Das Projekt ist in mehere Stages unterteilt, welche alle einen eigenen git Branch haben:
+
 
 `stage-2-with-SearchInput-selector`<br/>
 `stage-2-with-SearchInput`<br/>
