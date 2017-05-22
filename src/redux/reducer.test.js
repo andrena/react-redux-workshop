@@ -34,6 +34,14 @@ describe('reducer', () => {
         expect(reducedState).toBe(state)
     })
 
+    it('should not add an empty item', () => {
+        const action = {type: actionTypes.ADD_INDEX_ITEM, name: ''}
+
+        const reducedState = reducer(undefined, action)
+
+        expect(reducedState.list.length).toBe(0)
+    })
+
     it('should update the list correctly for one item', () => {
         const testItem = 'TestItem';
         const action = {type: actionTypes.ADD_INDEX_ITEM, name: testItem}
