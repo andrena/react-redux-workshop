@@ -34,7 +34,7 @@ Um eine Testcoverage zu erstellen, kann der Befehl
 <br />`yarn run test -- --coverage` ausgeführt werden.
 
 ## Stages
-Das Projekt ist in mehere Stages unterteilt, welche alle einen eigenen git Branch haben:
+Das Projekt ist in mehrere Stages unterteilt, welche alle einen eigenen git Branch haben:
 
 
 `stage-2-with-SearchInput-selector`<br/>
