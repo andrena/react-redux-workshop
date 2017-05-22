@@ -11,19 +11,19 @@ verschoben worden.
 Weiterhin wurde ein neuer Ordner `/src/redux/` erstellt, welcher die notwendigen
 `Redux` Teile beinhaltet.
 
+### Hinzufügen-Feld
+Es soll ein Feld hinzgefügt werden, mit welchem man neue Elemente
+in das Register einfügen kann. Die eingefügten Elemente sollen dann in der
+Liste angezeigt werden.
+
 ### Liste
-Zuerst soll eine neue React-Komponente erstellt werden,
+Es soll eine neue React-Komponente erstellt werden,
 welche die Elemente des zu implementierenden Registers enthält.
 
 Diese Liste soll ihre Daten aus dem Redux-Store erhalten.
 
-### Hinzufügen-Feld
-Als nächstes soll ein Feld hinzgefügt werden, mit welchem man neue Elemente
-in das Register einfügen kann. Die eingefügten Elemente sollen dann in der
-Liste angezeigt werden.
-
 ### Such-Feld
-Als letztes soll ein Feld hinzugefügt werden, mit welchem man in der Liste
+Es soll ein Feld hinzugefügt werden, mit welchem man in der Liste
 suchen kann. Hierbei soll der Nutzer bei jedem Tastaturanschlag das Ergebnis
 des momentanen Suchbegriffs erhalten. Es ist also kein "Suchen"-Button
 oder ähnliches nötig.
