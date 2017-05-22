@@ -30,7 +30,6 @@ Um eine Testcoverage zu erstellen, kann der Befehl
 <br />`yarn run test -- --coverage` ausgeführt werden.
 
 ## Stages
-
 Die verschiedenen Aufgaben (aka. stages) sind auf mehrere Branches aufgeteilt.
 
 * Branches auflisten: `git branch -r`
