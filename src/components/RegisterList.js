@@ -1,12 +1,21 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {ListGroup, ListGroupItem} from 'reactstrap'
+import {selectors} from '../redux/reducer'
 
-export default () => (
+export const RegisterList = ({list = []}) => (
     <ListGroup>
-        <ListGroupItem>Cras justo odio</ListGroupItem>
-        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-        <ListGroupItem>Morbi leo risus</ListGroupItem>
-        <ListGroupItem>Porta ac consectetur ac</ListGroupItem>
-        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        {list.map((listItem, index) => <ListGroupItem key={index}>{listItem}</ListGroupItem>)}
     </ListGroup>
 )
+
+RegisterList.propTypes = {
+    list: React.PropTypes.array,
+}
+
+const mapStateToProps = (state) => (
+    {list: selectors.getFilteredList(state)}
+)
+const mapActionsToProps = {}
+
+export default connect(mapStateToProps, mapActionsToProps)(RegisterList)

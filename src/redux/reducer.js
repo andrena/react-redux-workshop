@@ -10,3 +10,10 @@ export default (state = {list: []}, action) => {
             return state
     }
 }
+
+export const selectors = {
+    getFilteredList: ({list = [], searchText = ''}) => {
+        const lowerCaseSearchText = searchText.toLowerCase()
+        return list.filter((listItem) => listItem.toLowerCase().includes(lowerCaseSearchText))
+    }
+}
