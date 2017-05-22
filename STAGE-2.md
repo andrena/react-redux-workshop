@@ -22,7 +22,7 @@ welche die Elemente des zu implementierenden Registers enthält.
 
 Diese Liste soll ihre Daten aus dem Redux-Store erhalten.
 
-### Such-Feld
+### Suchfeld
 Es soll ein Feld hinzugefügt werden, mit welchem man in der Liste
 suchen kann. Hierbei soll der Nutzer bei jedem Tastaturanschlag das Ergebnis
 des momentanen Suchbegriffs erhalten. Es ist also kein "Suchen"-Button
