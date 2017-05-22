@@ -1,30 +1,6 @@
 import reducer, {selectors} from './reducer'
 import {actionTypes} from './actions'
 
-describe('selectors', () => {
-    it('should get the correctly filtered list items', () => {
-        const fooBar = 'fooBar'
-        const fooBaz = 'fooBaz'
-        const state = {
-            list: [
-                fooBar,
-                fooBaz,
-                'test1',
-                'test2',
-                'test3',
-                'test4',
-            ],
-            searchText: 'foo'
-        }
-
-        const filteredList = selectors.getFilteredList(state)
-
-        expect(Array.isArray(filteredList)).toBe(true)
-        expect(filteredList.length).toBe(2)
-        expect(filteredList).toEqual([fooBar, fooBaz])
-    })
-})
-
 describe('reducer', () => {
     it('should return the correct default state', () => {
         const state = {}
@@ -57,16 +33,5 @@ describe('reducer', () => {
         expect(reducedState1.list.length).toBe(2)
         expect(reducedState1.list[0]).toBe(testItem0)
         expect(reducedState1.list[1]).toBe(testItem1)
-    })
-
-    it('should return the correct state for action type ' + actionTypes.SEARCH_INDEX_ITEM, () => {
-        const testSearchText = 'testSearchText'
-
-        const state = {}
-        const action = {type: actionTypes.SEARCH_INDEX_ITEM, name: testSearchText}
-
-        const reducedState = reducer(state, action)
-
-        expect(reducedState.searchText).toBe(testSearchText)
     })
 })

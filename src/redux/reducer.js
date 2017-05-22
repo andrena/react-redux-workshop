@@ -1,19 +1,12 @@
 import {actionTypes} from './actions'
 
-export default (state = {list: [], searchText: ''}, action) => {
+export default (state = {list: []}, action) => {
     switch (action.type) {
         case actionTypes.ADD_INDEX_ITEM:
             return Object.assign({}, state, {list: [...state.list, action.name]})
         case actionTypes.SEARCH_INDEX_ITEM:
-            return Object.assign({}, state, {searchText: action.name})
+            return state
         default:
             return state
-    }
-}
-
-export const selectors = {
-    getFilteredList: ({list = [], searchText = ''}) => {
-        const lowerCaseSearchText = searchText.toLowerCase()
-        return list.filter((listItem) => listItem.toLowerCase().includes(lowerCaseSearchText))
     }
 }
